@@ -11,7 +11,6 @@ const DUMMY_QUOTES = [
 
 export default function QuoteDetail() {
   const params = useParams();
-  console.log(DUMMY_QUOTES);
   const quote = DUMMY_QUOTES.find((quote) => quote.id === params.quoteId);
 
   if (!quote) {
