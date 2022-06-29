@@ -13,7 +13,7 @@ const NewCommentForm = (props) => {
     if (status === "completed" && !error) {
       onAddedComment();
     }
-  }, [status, error]);
+  }, [status, error, onAddedComment]);
 
   const submitFormHandler = (event) => {
     event.preventDefault();
